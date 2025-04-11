@@ -1,0 +1,76 @@
+<html>
+    
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width-device-width, initial-scale-1.0"/>
+    <link rel="stylesheet" href="estilos.css">
+    <title>Mi primera pagina web</title>
+    </head>
+
+<body>
+<header>
+    <!--header lo estoy utilizando para poner el encabezado-->
+    <h1>Bienvenido a mi sitio</h1>
+    <nav>
+        <ul>
+             <a href="index.html">Inicio</a>
+             <a href="sobremi.html">Sobre mi</a>
+             <a href="contacto.html">contacto</a>
+        </ul>
+    </nav>
+</header>
+
+<section id="Inicio">
+<h2> Inicio</h2>
+<p>Hola, esta es mi primera pagina web. Estoy aprendido <b>HTML5</b></p>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEc9A_S6BPxCDRp5WjMFEfXrpCu1ya2OO-Lw&s.jpg" alt="imagen no encontrada"  
+style="display: block; margin: 0 auto;"
+width="200"
+ height="200">
+ <!--El display block sirve para que se comporte como un bloque para poder aplicar margin 
+ y el margin 0 auto sirve para podeer centrar la imagen-->
+</section>
+
+<section id="sobremi">
+<h2>Sobre mi</h2>
+<p>me gusta programar, crear sitios web y aprender nuevas tecnologias</p>
+<ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+ </ul>   
+</section>
+
+<section id="contacto">
+    <h2>Contacto</h2>
+    <form id="formulario-contacto">
+<label for="nombre">Nombre:</label><br>
+<input id="nombre" type="text" placeholder="Ingresa nombre"> <br><br>
+
+<label for="correo">Correo electronico:</label><br>
+<input id="correo" type="text" placeholder="example@correo.com"> <br><br>
+
+<label for="mensaje">Mensaje:</label><br>
+<textarea id="mensaje" placeholder="Escribe un mensaje ..."></textarea> <br><br>
+
+    <button id="enviar" style="width: 50px; margin: 0px , 20px;" type="submit"> Enviar </button><br><br>
+        <div id="mensaje-exitoso" style="color: green;"></div>
+</form>
+
+</section>
+<footer>
+    <p>&reg; 2025 - primera pagina web</p> 
+    <!--el &reg o &copy sirven para colocar la R encerrada o la C encerrada por un circulo-->
+ </footer>
+</body>
+
+<script>
+    document.getElementById("formulario-contacto").addEventListener("submit",function(event){
+        event.preventDefault();
+        
+    document.getElementById("mensaje-exitoso").innerText="¡El correo ha sido enviado correctamente a cesar.advincula@upsjb.edu.pe!"
+    });
+    
+</script>
+<!--El event.preventDefault() sirve para que la pagina no se reinicie o se recargue para que no se borre el mensaje-->
+</html>

@@ -1,0 +1,52 @@
+<html>
+    
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width-device-width, initial-scale-1.0"/>
+    <link rel="stylesheet" href="estilos.css">
+    <title>Mi primera pagina web</title>
+    </head>
+
+<body>
+<header>
+    <h1>Contacto</h1>
+    <nav>
+        <ul>
+             <a href="index.html">Inicio</a>
+             <a href="sobremi.html">Sobre mi</a>
+        </ul>
+    </nav>
+</header>
+<h2>Contacto</h2>
+    <form id="formulario-contacto">
+<label for="nombre">Nombre:</label><br>
+<input id="nombre" type="text" placeholder="Ingresa nombre"> <br><br>
+
+<label for="correo">Correo electronico:</label><br>
+<input id="correo" type="text" placeholder="example@correo.com"> <br><br>
+
+<label for="mensaje">Mensaje:</label><br>
+<textarea id="mensaje" placeholder="Escribe un mensaje ..."></textarea> <br><br>
+
+    <button id="enviar" style="width: 50px; margin: 0px , 20px;" type="submit"> Enviar </button><br><br>
+    <div id="mensaje-exitoso" style="color: green;"></div>
+</form>
+
+</section>
+<footer>
+    <p>&reg; 2025 - primera pagina web</p>
+ </footer>
+</body>
+
+<script>
+   document.getElementById("formulario-contacto").addEventListener("submit",function(event){
+        event.preventDefault();
+        
+    document.getElementById("mensaje-exitoso").innerText="¡El correo ha sido enviado correctamente a cesar.advincula@upsjb.edu.pe!"
+    });
+    
+</script>
+
+
+
+</html>

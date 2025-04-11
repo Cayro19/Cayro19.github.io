@@ -1,0 +1,25 @@
+header{
+    background: rgb(0, 0, 0);
+     text-align: center;
+     color: rgb(255, 255, 255);
+     padding: 20px;
+}
+footer{
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+
+    margin: 20px;
+}
+input , textarea{
+    width: 100%;
+}
